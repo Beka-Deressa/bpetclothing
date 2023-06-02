@@ -75,19 +75,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-    const registerButton = document.getElementById("register-btn");
-    const form = document.getElementById("register");
-    form.addEventListener("submit", handleFormSubmit);
-    registerButton.addEventListener("click", function () {
-
-        if (form.style.display === "none") {
-            form.style.display = "block";
-        } else {
-            form.style.display = "none";
-        }
-
-    })
-
-});
 
