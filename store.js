@@ -104,7 +104,7 @@ function updateCartTotal() {
 
     let taxAmount = subtotal * taxRate;
     let total = subtotal + taxAmount;
-    
+
     taxAmount = Math.round(taxAmount * 100) / 100;
     total = Math.round(total * 100) / 100;
 
