@@ -30,6 +30,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .nav0 li {
   margin-right: 20px;
   margin-left: 20px;
@@ -51,10 +52,12 @@
   margin-right: 30px;
   margin-left: 30px;
 }
+
 .nav-reg {
   font-size: 8px;
   align-items: center;
 }
+
 .nav-link {
   color: black;
   text-transform: uppercase;
@@ -68,6 +71,7 @@
   padding: 30px 0 27px;
   align-items: center;
 }
+
 .card-cart {
   display: none;
   width: 50%;
@@ -87,6 +91,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .search {
   height: 40px;
   width: 40%;
@@ -95,6 +100,7 @@
   margin-right: 15px;
   border: 2px solid red;
 }
+
 .btn0 {
   height: 40px;
   width: 20%;
@@ -116,19 +122,59 @@
   font-weight: 700;
 }
 
-.container1 {
+code .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin-left: 100px;
-  margin-top: 20px;
 }
 
-#itemCards img {
+.form1 {
+  display: none;
+
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: lightgray;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+input[type="number"] {
+  width: 20%;
+  padding: 8px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#category {
+  width: 80%;
+  padding: 8px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 25px;
+  border: 1px solid #fff;
+  background: #FF4B2B;
+  color: #fff;
+}
+
+img {
   max-width: 100px;
   max-height: 100px;
-  margin: auto;
+  align-items: center;
 }
 
 .heading {
@@ -138,20 +184,48 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#itemCards {
-  display:flex;
+#cards {
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.card {
-  position: relative;
-  box-shadow: 0 0 4px 3px pink;
+.card1 {
+  width: 23%;
+  box-shadow: 0 0 4px 3px green;
   text-align: center;
   padding: 1.5em;
   margin-bottom: 2em;
-  background-color: #f5fbf6;
- }
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.category,
+.price {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.2rem;
+}
+
+.btn2 {
+  height: 30px;
+  width: 10%;
+  outline: none;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 60px;
+  font-weight: 700;
+}
+
+.col-md-3.m-auto h1 {
+  font-size: 35px;
+}
 
 .footer {
   width: 100%;
