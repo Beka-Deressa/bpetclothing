@@ -1,212 +1,163 @@
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
   }
-  .navbar{
-    background-color: #f0f0f0;
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
   }
-  .Pbet{
-    justify-content: left;
-    font-size: 3rem ;
-    color: black ;
-    font-family: 'Brush Script MT', cursive;
-    letter-spacing: 4px;
-  }
-  .Pbet:hover{
-    color: black
-  }
-  .header-logo span{
-    color: green;
-  }
-  .navbar-collapse {
-    
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
-.nav0 li{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #f0f0f0;
+}
+.Pbet {
+  justify-content: left;
+  font-size: 3rem;
+  color: black;
+  font-family: "Brush Script MT", cursive;
+  letter-spacing: 4px;
+}
+.Pbet:hover {
+  color: black;
+}
+.header-logo span {
+  color: green;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.nav0 li {
   margin-right: 20px;
-    margin-left: 20px;
-  }
-  .login{
-    display: none;
-    width: 50%;
-    
-  }
-  .register{
-    display: none;
-    width: 50%;
-   
-  }
-  .navbar-nav{
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  .nav-reg {
-font-size: 8px;
-align-items: center;
+  margin-left: 20px;
 }
-  .nav-link{
-    color: black;
-    text-transform: uppercase;
-  }
-  .nav-link:hover{
-    color: black;
-  }
-  .nav-item{
-    padding: 30px 0 27px;
-    align-items: center;
-  }
-  .card-cart{
-    display: none;
-    width: 50%;
-    height: 100%;
-  }
-  .main{
-  background: url(https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3333,w_5000,x_0,y_0/c_limit,dpr_2.625,f_auto,fl_lossy,q_80,w_412/SeptemberShop-courtesy_gb1yug.jpg)no-repeat;
+.login {
+  display: none;
+  width: 50%;
+}
+.register {
+  display: none;
+  width: 50%;
+}
+.navbar-nav {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.nav-reg {
+  font-size: 8px;
+  align-items: center;
+}
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-item {
+  padding: 30px 0 27px;
+  align-items: center;
+}
+.card-cart {
+  display: none;
+  width: 50%;
+  height: 100%;
+}
+.main {
+  background: url(https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3333,w_5000,x_0,y_0/c_limit,dpr_2.625,f_auto,fl_lossy,q_80,w_412/SeptemberShop-courtesy_gb1yug.jpg)
+    no-repeat;
   background-size: cover;
   height: 75vh;
   background-position: 50% 50%;
-  width: 100%;}
+  width: 100%;
+}
 
-.d-flex{
+.d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  .search{
+.search {
   height: 40px;
   width: 40%;
-  border-radius:60px;
+  border-radius: 60px;
   outline: none;
   margin-right: 15px;
   border: 2px solid red;
-  }
-  .btn0{
+}
+.btn0 {
   height: 40px;
   width: 20%;
   outline: none;
   border: none;
   background: red;
   color: white;
-  border-radius:60px;
+  border-radius: 60px;
   font-weight: 700;
-  
-  }
-  .row h1{
-    letter-spacing: 8px;
-  }
+}
+.row h1 {
+  letter-spacing: 8px;
+}
 
-  .main h1{
+.main h1 {
   font-size: 4rem;
   font-weight: 700;
-  }
+}
 
-  code                                                                                                                                                                             .container {
+.container1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     margin-left: 100px;
+    margin-top: 20px;
   }
-  .form1 {
-    display: none;
-      
-      width: 50%;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      background-color: lightgray;
-      box-sizing: border-box;
-    }
-  input[type="text"] {
-      width: 80%;
-      padding: 8px;
-      margin-top: 15px;
-      margin-left: 15px;
-    }
-  input[type="number"] {
-    width: 20%;
-    padding: 8px;
-    margin-top: 15px;
-    margin-left: 15px;
-  }
-  #category {
-    width: 80%;
-    padding: 8px;
-    margin-top: 15px;
-    margin-left: 15px;
-  }
-  input[type="submit"] {
-    width: 20%;
-      padding: 5px 10px;
-      border-radius: 10px;
-      margin: 10px 10px 10px 25px;
-      border: 1px solid #fff;
-      background: #FF4B2B;
-      color: #fff;
-  }
-  img {
+  
+  #itemCards img {
     max-width: 100px;
     max-height: 100px;
-    align-items: center;
+    margin: auto;
   }
+  
   .heading {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  #cards {
+  
+  #itemCards {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .card1 {
-    width: 23%;
-    box-shadow: 0 0 4px 3px green;
+  
+  .card {
+    position: relative;
+    box-shadow: 0 0 4px 3px pink;
     text-align: center;
     padding: 1.5em;
     margin-bottom: 2em;
-    margin-top: 2em;
-    margin-left: 2em; }
-  
-  .title {
-    font-size: 1.3rem;
-  }
-  .category, .price {
-    font-weight: bold;
-    text-transform: capitalize;
-    margin: 1em;
-    font-size: 1.2rem;
-  }     
+    background-color: #f5fbf6;
+   }
 
-  .btn2{
-    height: 30px;
-    width: 10%;
-    outline: none;
-    border: none;
-    background: red;
-    color: white;
-    border-radius:60px;
-    font-weight: 700;
-  }
-  .col-md-3.m-auto h1 {
-    font-size: 35px;
+.footer {
+  width: 100%;
+  margin: 0 auto;
+}
+.copy-right {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0;
 }
 
-  .footer {
-    width: 100%;
-    margin: 0 auto;
-  }
-    .copy-right{
-      background-color: #f0f0f0;
-      padding: 20px 0;
-      text-align: center;
-      margin: 0;
-    }
-
-.register-form{
+.register-form {
   display: none;
   position: relative;
   max-width: 700px;
@@ -216,101 +167,93 @@ align-items: center;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.register-form .form{
+.register-form .form {
   margin-top: 30px;
 }
 
-.register-form header{
+.register-form header {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
   text-align: center;
 }
-    .form .input-box {
-      width: 100%;
-      margin-top: 20px;
-    }
-    .input-box label {
-      color: #333;
-    }
-    .form :where(.input-box input, .select-box) {
-      position: relative;
-      height: 50px;
-      width: 100%;
-      outline: none;
-      font-size: 1rem;
-      color: #707070;
-      margin-top: 8px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 0 15px;
-    }
-    .input-box input:focus {
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    }
-    .form .column {
-      display: flex;
-      column-gap: 15px;
-    }
-    .form .gender-box {
-      margin-top: 20px;
-    }
-    .gender-box h3 {
-      color: #333;
-      font-size: 1rem;
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-    .form :where(.gender-option, .gender) {
-      display: flex;
-      align-items: center;
-      column-gap: 50px;
-      flex-wrap: wrap;
-    }
-    .form .gender {
-      column-gap: 5px;
-    }
-    .gender input {
-      accent-color: rgb(130, 106, 251);
-    }
-    .form :where(.gender input, .gender label) {
-      cursor: pointer;
-    }
-    .gender label {
-      color: #707070;
-    }
-    .address :where(input, .select-box) {
-      margin-top: 15px;
-    }
-    .select-box select {
-      height: 100%;
-      width: 100%;
-      outline: none;
-      border: none;
-      color: #707070;
-      font-size: 1rem;
-    }
-    .form button {
-      height: 55px;
-      width: 100%;
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 400;
-      margin-top: 30px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      background: rgb(47, 13, 220);
-    }
-    .form button:hover {
-      background: rgb(47, 13, 220);
-    }
-    
-    @media screen and (max-width: 500px) {
-      .form .column {
-        flex-wrap: wrap;
-      }
-      .form :where(.gender-option, .gender) {
-        row-gap: 15px;
-      }
-    }
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(47, 13, 220);
+}
+.form button:hover {
+  background: rgb(47, 13, 220);
+}
+
