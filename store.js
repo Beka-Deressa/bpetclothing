@@ -107,6 +107,7 @@ function updateCartTotal() {
     let cartRows = cartItemContainer.getElementsByClassName('cart-row');
     let subtotal = 0;
     let taxRate = 0.06;
+    let totalQuantity = 0; // Add this line to track the total quantity
 
     for (let i = 0; i < cartRows.length; i++) {
         let cartRow = cartRows[i];
@@ -115,6 +116,7 @@ function updateCartTotal() {
         let price = parseFloat(priceElement.innerText.replace('$', ''));
         let quantity = quantityElement.value;
         subtotal += price * quantity;
+        totalQuantity += parseInt(quantity); // Add this line to calculate the total quantity
     }
 
     let taxAmount = subtotal * taxRate;
@@ -125,6 +127,17 @@ function updateCartTotal() {
 
     document.getElementsByClassName('cart-tax-amount')[0].innerText = '$' + taxAmount;
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;
+
+    // Update the cart-quantity total element
+    let cartQuantityTotalElement = document.getElementById('cart-quantity-total');
+    if (totalQuantity < 10) {
+        cartQuantityTotalElement.innerText = '0' + totalQuantity;
+    } else {
+        cartQuantityTotalElement.innerText = totalQuantity;
+    }
+
+     // Store the updated quantity in sessionStorage
+  sessionStorage.setItem('cartQuantity', totalQuantity);
 }
 
 function updateCartData() {
@@ -154,6 +167,7 @@ function updateCartData() {
 function populateCartData() {
     let cartItems = document.getElementsByClassName('cart-items')[0];
     let cartData = sessionStorage.getItem('cartData');
+    let totalQuantity = sessionStorage.getItem('cartQuantity');
 
     if (cartData) {
         cartData = JSON.parse(cartData);
@@ -165,6 +179,20 @@ function populateCartData() {
             quantityInput.value = item.quantity;
         }
     }
+
+     // Update the cart-quantity total element
+  let cartQuantityTotalElement = document.getElementById('cart-quantity-total');
+  if (totalQuantity < 10) {
+    if(totalQuantity === null) {
+        cartQuantityTotalElement.innerText = '00';
+    } else { 
+        cartQuantityTotalElement.innerText = '0' + totalQuantity;
+    }
+    
+} else {
+    cartQuantityTotalElement.innerText = totalQuantity;
+}
+
 }
 
 window.addEventListener("DOMContentLoaded", function () {

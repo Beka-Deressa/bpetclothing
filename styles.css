@@ -393,3 +393,19 @@
   display: none;
 
 } */
+
+.cart-icon-container {
+  position: relative;
+}
+
+/*Cart item quantity display*/
+#cart-quantity-total {
+  position: absolute;
+  top: -18px; /* Adjust this value as needed */
+  right: 4px; /* Adjust this value as needed */
+  /* background-color: red; */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 16px;
+}
